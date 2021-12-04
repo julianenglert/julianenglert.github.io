@@ -1,0 +1,23 @@
+baseURL = "https://julianenglert.me"
+title = "Julian Englert"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "Blog"
+  email = "julian dot englert at pm dot me"
+  dark = "auto"
+  highlight = true
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true
