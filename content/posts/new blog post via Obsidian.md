@@ -12,3 +12,6 @@ ln -s /Users/julian.englert/Library/Mobile\ Documents/com~apple~CloudDocs/julian
 ```
 
 
+Deployment:
+- https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html
+- 
