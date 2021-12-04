@@ -1,0 +1,70 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Blog">
+<link rel="shortcut icon" href=https://julianenglert.me/favicon.ico>
+<link rel=stylesheet href=/css/style.min.css>
+<title>Hugo guide Netlify</title>
+</head>
+<body><header id=banner>
+<h2><a href=https://julianenglert.me>Julian Englert</a></h2>
+<nav>
+<ul>
+</ul>
+</nav>
+</header>
+<main id=content>
+<article>
+<header id=post-header>
+<h1>Hugo guide Netlify</h1>
+<div>
+<time>August 24, 2020</time>
+</div>
+</header><p>This article shows how create a static website with Hugo on your local machine, push it to GitHub and deploy it via Netlify.</p>
+<p><strong>Steps</strong> (all on Windows 10)</p>
+<p>Recommended tools:</p>
+<ul>
+<li>Sublime Text (<a href=https://www.sublimetext.com/>https://www.sublimetext.com/</a>)</li>
+<li>PowerToys for Markdown preview in Windows Explorer (<a href=https://github.com/microsoft/PowerToys>https://github.com/microsoft/PowerToys</a>)</li>
+</ul>
+<p>Install Chocolatey using PowerShell (open as admin) (<a href=https://chocolatey.org/install>https://chocolatey.org/install</a>)</p>
+<p>Install Hugo via Chocolatey still using PowerShell (<a href=https://gohugo.io/getting-started/installing/#chocolatey-windows>https://gohugo.io/getting-started/installing/#chocolatey-windows</a>)</p>
+<p>Install Git via Chocolatey (<a href=https://chocolatey.org/packages/git>https://chocolatey.org/packages/git</a>)</p>
+<p>Use terminal commands (<a href=https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/>https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/</a>) to navigate to directory for new test site (doesn&rsquo;t really matter where, just so you can find it in the file explorer again)</p>
+<p>Follow Hugo Quick Start Guide (<a href=https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site>https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site</a>) using a theme of your choice</p>
+<p>If you get an error along the lines of &ldquo;bare keys cannot contain &lsquo;\x00&rsquo;&rdquo;, open the <em>config.toml</em> using a text editor and fix the line that is supposed to say <code>theme = "theme_of_your_choice"</code>. If the file contains lots of <code>3a2f 2f6a 756c 6961 6e2d 656e 676c 6572</code> or similar, it&rsquo;s hexadecimal and you have to reopen with UTF encoding.</p>
+<p>Use the file explorer to move some of the <em>exampleSite</em> content into your actual website directory and play in <em>config.toml</em> with the parameters (website title, categories, date format etc) to get a better feel for how things work</p>
+<p>Create a new GitHub repository in your web browser</p>
+<p>Use the Git Bash command line to push the local website directory to GitHub (<a href="https://www.youtube.com/watch?v=ibNqauPoicg">https://www.youtube.com/watch?v=ibNqauPoicg</a>)</p>
+<p>Use Netlify (<a href=https://www.netlify.com/>https://www.netlify.com/</a>) to connect to your GitHub account, select the repository with the website and deploy it</p></article>
+</main><footer id=footer>
+<div class=side-by-side>
+<div style=width:73%;float:left>
+Hosted on <a href=https://pages.github.com/>Github Pages</a>
+<br>
+<a href=https://github.com/LukasJoswiak/etch>Etch</a> theme for <a href=https://gohugo.io/>Hugo</a>
+</div>
+<div style=width:27%;float:right>
+<div id=mc_embed_signup>
+<form action="https://pm.us2.list-manage.com/subscribe/post?u=068b0865245c6dd5a4350878e&id=f384a59a27" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
+<div id=mc_embed_signup_scroll>
+<div class=mc-field-group>
+<input type=email name=EMAIL class="required email" id=mce-EMAIL placeholder="email address">
+</div>
+<div id=mce-responses class=clear>
+<div class=response id=mce-error-response style=display:none></div>
+<div class=response id=mce-success-response style=display:none></div>
+</div>
+<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_068b0865245c6dd5a4350878e_f384a59a27 tabindex=-1></div>
+<div class=btns><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button> or add <a href=https://julianenglert.meindex.xml>RSS</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+<br>
+<br>
+</div>
+</footer>
+</body>
+</html>

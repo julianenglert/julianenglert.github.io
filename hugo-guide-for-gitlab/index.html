@@ -1,0 +1,120 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Blog">
+<link rel="shortcut icon" href=https://julianenglert.me/favicon.ico>
+<link rel=stylesheet href=/css/style.min.css>
+<title>Hugo guide for GitLab</title>
+</head>
+<body><header id=banner>
+<h2><a href=https://julianenglert.me>Julian Englert</a></h2>
+<nav>
+<ul>
+</ul>
+</nav>
+</header>
+<main id=content>
+<article>
+<header id=post-header>
+<h1>Hugo guide for GitLab</h1>
+<div>
+<time>November 6, 2020</time>
+</div>
+</header><p>Build a Hugo website and deploy it on GitLab</p>
+<p>(<em>also see my <a href=/hugo-guide-netlify>earlier guide</a> for deploying on Netlify</em>)</p>
+<h3 id=installation>Installation</h3>
+<ul>
+<li><a href=https://chocolatey.org/install>install Chocolatey using PowerShell</a> (open as admin)</li>
+</ul>
+<ul>
+<li><a href=https://gohugo.io/getting-started/installing/#chocolatey-windows>install Hugo via Chocolatey</a> still using PowerShell</li>
+<li><a href=https://chocolatey.org/packages/git>install Git via Chocolatey</a></li>
+</ul>
+<h3 id=create-hugo-site-and-download-theme>Create Hugo site and download theme</h3>
+<ul>
+<li>create new website running <code>hugo new site website</code> which creates the root folder for the site (<code>~/website</code>)</li>
+<li>download a theme with <code>git clone https://theme-url</code> into <code>/themes/theme</code></li>
+</ul>
+<h3 id=add-content-and-test-locally>Add content and test locally</h3>
+<ul>
+<li>modify <code>config.toml</code> and <code>.md</code> files in website directory</li>
+<li>run <code>hugo server</code> in root directory</li>
+<li>see locally hosted website according to changes</li>
+</ul>
+<h3 id=host-website-on-gitlabhttpsgohugoiohosting-and-deploymenthosting-on-gitlab><a href=https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/>Host website on GitLab</a></h3>
+<ul>
+<li>add <code>.gitlab-ci.yml</code> file containing [^hosting-on-gitlab]</li>
+</ul>
+<pre tabindex=0><code>
+image: monachus/hugo
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+pages:
+  script:
+  - hugo
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+</code></pre><ul>
+<li>add <code>.gitsubmodules</code> file containing [^add-git-submodule]</li>
+</ul>
+<pre tabindex=0><code>[submodule &quot;themes/theme&quot;] 
+  path = themes/theme 
+  url = https://theme-url.git
+</code></pre><ul>
+<li>create GitLab repository named <em>user.gitlab.io</em></li>
+<li>push local website folder to this repository
+<ul>
+<li><code>git remote add origin https://gitlab.com/user/user.gitlab.io.git</code></li>
+<li><code>git add .</code></li>
+<li><code>git commit -m "comments"</code></li>
+<li><code>git push -u origin master</code></li>
+</ul>
+</li>
+<li>wait for website to build
+<ul>
+<li>see <code>https://gitlab.com/user/user.gitlab.io/pipelines</code></li>
+<li>when done, access at <code>https://user.gitlab.io</code></li>
+</ul>
+</li>
+<li>set repository to <strong>Public</strong> if not already by accessing <code>https://gitlab.com/user/user.gitlab.io/edit</code></li>
+</ul>
+<h2 id=how-to-modify-theme-layouts>How to modify theme layouts</h2>
+<p>Copy the <code>.html</code> layouts from the theme&rsquo;s <code>layouts</code> folder to your website&rsquo;s root directory (there should be an empty <code>layouts</code> folder there - if not, create it)</p>
+<p>Whatever changes you now make to the <code>.html</code> layouts in the root folder will change the structure of your website. <strong>Hugo will use these layouts over the ones in <code>/themes/&lt;your theme>/layouts</code>.</strong></p>
+<p>Make sure to check that you didn&rsquo;t break the site by running <code>hugo server</code> before pushing to your hosting server.</p></article>
+</main><footer id=footer>
+<div class=side-by-side>
+<div style=width:73%;float:left>
+Hosted on <a href=https://pages.github.com/>Github Pages</a>
+<br>
+<a href=https://github.com/LukasJoswiak/etch>Etch</a> theme for <a href=https://gohugo.io/>Hugo</a>
+</div>
+<div style=width:27%;float:right>
+<div id=mc_embed_signup>
+<form action="https://pm.us2.list-manage.com/subscribe/post?u=068b0865245c6dd5a4350878e&id=f384a59a27" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
+<div id=mc_embed_signup_scroll>
+<div class=mc-field-group>
+<input type=email name=EMAIL class="required email" id=mce-EMAIL placeholder="email address">
+</div>
+<div id=mce-responses class=clear>
+<div class=response id=mce-error-response style=display:none></div>
+<div class=response id=mce-success-response style=display:none></div>
+</div>
+<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_068b0865245c6dd5a4350878e_f384a59a27 tabindex=-1></div>
+<div class=btns><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button> or add <a href=https://julianenglert.meindex.xml>RSS</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+<br>
+<br>
+</div>
+</footer>
+</body>
+</html>
