@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guide on Julian Englert</title><link>https://julianenglert.me/tags/guide/</link><description>Recent content in guide on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Fri, 06 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.me/tags/guide/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian integration</title><link>https://julianenglert.me/obsidian-integration/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.me/obsidian-integration/</guid><description>&lt;p>Use symlink to access website folder from Obsidian vault&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guide on Julian Englert</title><link>https://julianenglert.com/tags/guide/</link><description>Recent content in guide on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Fri, 06 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/tags/guide/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian integration</title><link>https://julianenglert.com/obsidian-integration/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/obsidian-integration/</guid><description>&lt;p>Use symlink to access website folder from Obsidian vault&lt;/p>
 &lt;pre tabindex="0">&lt;code>ln -s /Users/julian.englert/Library/Mobile\ Documents/com~apple~CloudDocs/julianenglert.github.io/content /Users/julian.englert/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Obsidian
-&lt;/code>&lt;/pre></description></item><item><title>Hugo guide for GitLab</title><link>https://julianenglert.me/hugo-guide-for-gitlab/</link><pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.me/hugo-guide-for-gitlab/</guid><description>&lt;p>Build a Hugo website and deploy it on GitLab&lt;/p>
-&lt;p>(&lt;em>also see my &lt;a href="https://julianenglert.me/hugo-guide-netlify">earlier guide&lt;/a> for deploying on Netlify&lt;/em>)&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>Deployment:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html">https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html&lt;/a>&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul></description></item><item><title>Hugo guide for GitLab</title><link>https://julianenglert.com/hugo-guide-for-gitlab/</link><pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/hugo-guide-for-gitlab/</guid><description>&lt;p>Build a Hugo website and deploy it on GitLab&lt;/p>
+&lt;p>(&lt;em>also see my &lt;a href="https://julianenglert.com/hugo-guide-netlify">earlier guide&lt;/a> for deploying on Netlify&lt;/em>)&lt;/p>
 &lt;h3 id="installation">Installation&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://chocolatey.org/install">install Chocolatey using PowerShell&lt;/a> (open as admin)&lt;/li>
@@ -64,7 +68,7 @@ url = https://theme-url.git
 &lt;h2 id="how-to-modify-theme-layouts">How to modify theme layouts&lt;/h2>
 &lt;p>Copy the &lt;code>.html&lt;/code> layouts from the theme&amp;rsquo;s &lt;code>layouts&lt;/code> folder to your website&amp;rsquo;s root directory (there should be an empty &lt;code>layouts&lt;/code> folder there - if not, create it)&lt;/p>
 &lt;p>Whatever changes you now make to the &lt;code>.html&lt;/code> layouts in the root folder will change the structure of your website. &lt;strong>Hugo will use these layouts over the ones in &lt;code>/themes/&amp;lt;your theme&amp;gt;/layouts&lt;/code>.&lt;/strong>&lt;/p>
-&lt;p>Make sure to check that you didn&amp;rsquo;t break the site by running &lt;code>hugo server&lt;/code> before pushing to your hosting server.&lt;/p></description></item><item><title>How to Use Daily Notes in Obsidian</title><link>https://julianenglert.me/how-to-use-daily-notes-in-obsidian/</link><pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.me/how-to-use-daily-notes-in-obsidian/</guid><description>&lt;p>&lt;strong>&lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.&lt;/p>
+&lt;p>Make sure to check that you didn&amp;rsquo;t break the site by running &lt;code>hugo server&lt;/code> before pushing to your hosting server.&lt;/p></description></item><item><title>How to Use Daily Notes in Obsidian</title><link>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</link><pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</guid><description>&lt;p>&lt;strong>&lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.&lt;/p>
 &lt;p>The ability to form &lt;strong>&lt;code>[[connections]]&lt;/code>&lt;/strong> between them mimics the way ideas are captured in your brain, with the distinction that Obsidian never forgets: Built on top of a local folder of Markdown files, it is the perfect tool to construct a &amp;ldquo;second brain&amp;rdquo;.&lt;/p>
 &lt;p>In this series I&amp;rsquo;ll show some of the workflows I&amp;rsquo;ve found to be working well with Obsidian.&lt;/p>
 &lt;p>Here: &lt;strong>Daily notes with capture note&lt;/strong>&lt;/p>
@@ -76,22 +80,22 @@ url = https://theme-url.git
 &lt;/ul>
 &lt;h2 id="main">Main&lt;/h2>
 &lt;p>The &lt;strong>&lt;code>000 Capture&lt;/code>&lt;/strong>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> note is at the heart of my day to day note-taking in Obsidian.&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/obsidian_daily_notes/capture_desktop.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/obsidian_daily_notes/capture_desktop.png" alt="">&lt;/p>
 &lt;p>It&amp;rsquo;s the universal list of all tasks and todos, collects reading / podcast / Netflix recommendations and serves as a shopping list.&lt;/p>
 &lt;p>In it I plan out my day and develop thoughts into notes.&lt;/p>
 &lt;p>I use it to keep track of all the things I&amp;rsquo;m doing through out the day (writing emails, planning things, writing or documenting code, talking to people etc.).&lt;/p>
 &lt;p>Markdown allows you to create checkbox lists with nested items so finished tasks can simply be crossed out.&lt;/p>
 &lt;p>For meetings, I create a note with discussion topics or minutes directly from the capture note.&lt;/p>
 &lt;p>I create a note for each article I read during the day with some basic metadata with author information, date of publishing and reading, link and tags. This allows organizing my collection of notes via tags and MOCs (&lt;em>maps of concepts&lt;/em>).&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/obsidian_daily_notes/reading_notes.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/obsidian_daily_notes/reading_notes.png" alt="">&lt;/p>
 &lt;p>Using one of the various Markdown editors for iOS, I can add thoughts, tasks, and recommendations to my capture note on mobile too&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>.&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/obsidian_daily_notes/capture_mobile.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/obsidian_daily_notes/capture_mobile.png" alt="">&lt;/p>
 &lt;p>At the end of the day, I copy all completed tasks, readings and meeting notes of the day into the corresponding daily note.&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/obsidian_daily_notes/daily_note.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/obsidian_daily_notes/daily_note.png" alt="">&lt;/p>
 &lt;p>Over time, the daily notes thus become a repository that keeps track of tasks, projects and content consumed.&lt;/p>
 &lt;p>Unfinished tasks stay in the capture note. There, after doing my daily planning and prioritization on the next day I either pick them up or discard them.&lt;/p>
 &lt;p>On the top of my daily notes you can see a section with links to yesterday&amp;rsquo;s and tomorrow&amp;rsquo;s note. This allows me to quickly navigate between daily notes to revisit them or to move tasks from one day to the next.&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/obsidian_daily_notes/daily_note_header.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/obsidian_daily_notes/daily_note_header.png" alt="">&lt;/p>
 &lt;p>The Markdown for this header template can just be copied from one daily note to another and adjusted for each day or you can use a script to paste it with a shortcut of your choice (here with &lt;a href="https://autohotkey.com/">Autohokey&lt;/a>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>)&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="err">&amp;lt;&lt;/span>&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">Yesterday&lt;/span> &lt;span class="sb">`[[link to yesterday&amp;#39;s daily note]]`&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="sb">`[[link to tomorrows&amp;#39;s daily note]]`&lt;/span> &lt;span class="na">Tomorrow&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>&amp;gt;
 &lt;span class="sb">`[[link to capture note]]`&lt;/span>
@@ -130,10 +134,10 @@ Send, {Enter}
 Return
 &lt;/code>&lt;/pre>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>My Reading Workflow</title><link>https://julianenglert.me/my-reading-workflow/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.me/my-reading-workflow/</guid><description>&lt;p>This post shows how to build a reading workflow that allows you to extract summaries from books you&amp;rsquo;ve read to further work with the ideas in them.&lt;/p>
+&lt;/section></description></item><item><title>My Reading Workflow</title><link>https://julianenglert.com/my-reading-workflow/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/my-reading-workflow/</guid><description>&lt;p>This post shows how to build a reading workflow that allows you to extract summaries from books you&amp;rsquo;ve read to further work with the ideas in them.&lt;/p>
 &lt;h1 id="goal">Goal&lt;/h1>
 &lt;p>Be able to read any book digitally and process its most important ideas to never forget them&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/reading_workflow/overviewm.png" alt="overviewm">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/reading_workflow/overviewm.png" alt="overviewm">&lt;/p>
 &lt;h1 id="steps">Steps&lt;/h1>
 &lt;ol>
 &lt;li>Create a personal library of epubs&lt;/li>
@@ -155,21 +159,21 @@ Return
 &lt;li>while reading, highlight parts, chapters (and subchapters if meaningful) as well as text excerpts&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/li>
 &lt;li>highlights get compiled into a Google Doc that gets saved to your Drive under &lt;em>PlayBook Notes&lt;/em>&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://julianenglert.me/reading_workflow/g1.PNG" alt="g1">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/reading_workflow/g1.PNG" alt="g1">&lt;/p>
 &lt;h2 id="clean-up-highlights-with-this-google-colab-python-scripthttpscolabresearchgooglecomdrive1j11dj6bu1wrodx-xjs194aorw3fiyo7zuspsharing">Clean up highlights with this &lt;a href="https://colab.research.google.com/drive/1J11DJ6Bu1wRODx-XJs194aoRW3FIyO7z?usp=sharing">Google Colab Python script&lt;/a>&lt;/h2>
 &lt;p>Copy file ID from Google Document
-&lt;img src="https://julianenglert.me/reading_workflow/g2.PNG" alt="g2">&lt;/p>
+&lt;img src="https://julianenglert.com/reading_workflow/g2.PNG" alt="g2">&lt;/p>
 &lt;p>Run the script with your file ID to get extracted text file
-&lt;img src="https://julianenglert.me/reading_workflow/g3.PNG" alt="g3">&lt;/p>
+&lt;img src="https://julianenglert.com/reading_workflow/g3.PNG" alt="g3">&lt;/p>
 &lt;h2 id="import-into-note-taking--knowledge-management-here-shown-using-obsidianhttpsobsidianmd">Import into note-taking / knowledge management (here shown using &lt;a href="https://obsidian.md">Obsidian&lt;/a>)&lt;/h2>
 &lt;p>Paste raw text&lt;br>
-&lt;img src="https://julianenglert.me/reading_workflow/o1.PNG" alt="o1">&lt;/p>
+&lt;img src="https://julianenglert.com/reading_workflow/o1.PNG" alt="o1">&lt;/p>
 &lt;p>Recreate headings and insert images / figures. Re-highlight the summary to create an even more condensed version for fast re-reading. Optionally, write some metadata&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/reading_workflow/o2m.png" alt="o2m">
-&lt;img src="https://julianenglert.me/reading_workflow/o3m.png" alt="o3m">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/reading_workflow/o2m.png" alt="o2m">
+&lt;img src="https://julianenglert.com/reading_workflow/o3m.png" alt="o3m">&lt;/p>
 &lt;h2 id="example-of-an-interconnected-book">Example of an interconnected book&lt;/h2>
 &lt;p>Josh Kaufman - The Personal MBA&lt;/p>
-&lt;p>&lt;img src="https://julianenglert.me/reading_workflow/pmba.jpg" alt="pmba">&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/reading_workflow/pmba.jpg" alt="pmba">&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
@@ -177,7 +181,7 @@ Return
 &lt;p>In PlayBooks, there is no way to highlight images and figures directly. Make sure to highlight the caption (&lt;mark>Figure 3.1: This graph shows XYZ&amp;hellip;&lt;/mark>) if there is one, to find where to insert the missing figure later in your knowledge management system&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Hugo guide Netlify</title><link>https://julianenglert.me/hugo-guide-netlify/</link><pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.me/hugo-guide-netlify/</guid><description>&lt;p>This article shows how create a static website with Hugo on your local machine, push it to GitHub and deploy it via Netlify.&lt;/p>
+&lt;/section></description></item><item><title>Hugo guide Netlify</title><link>https://julianenglert.com/hugo-guide-netlify/</link><pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/hugo-guide-netlify/</guid><description>&lt;p>This article shows how create a static website with Hugo on your local machine, push it to GitHub and deploy it via Netlify.&lt;/p>
 &lt;p>&lt;strong>Steps&lt;/strong> (all on Windows 10)&lt;/p>
 &lt;p>Recommended tools:&lt;/p>
 &lt;ul>
@@ -193,7 +197,7 @@ Return
 &lt;p>Use the file explorer to move some of the &lt;em>exampleSite&lt;/em> content into your actual website directory and play in &lt;em>config.toml&lt;/em> with the parameters (website title, categories, date format etc) to get a better feel for how things work&lt;/p>
 &lt;p>Create a new GitHub repository in your web browser&lt;/p>
 &lt;p>Use the Git Bash command line to push the local website directory to GitHub (&lt;a href="https://www.youtube.com/watch?v=ibNqauPoicg">https://www.youtube.com/watch?v=ibNqauPoicg&lt;/a>)&lt;/p>
-&lt;p>Use Netlify (&lt;a href="https://www.netlify.com/">https://www.netlify.com/&lt;/a>) to connect to your GitHub account, select the repository with the website and deploy it&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://julianenglert.me/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://julianenglert.me/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;p>Use Netlify (&lt;a href="https://www.netlify.com/">https://www.netlify.com/&lt;/a>) to connect to your GitHub account, select the repository with the website and deploy it&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://julianenglert.com/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://julianenglert.com/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
 &lt;h1 id="h1">H1&lt;/h1>
