@@ -1,0 +1,95 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Blog">
+<link rel="shortcut icon" href=https://julianenglert.com/favicon.ico>
+<link rel=stylesheet href=/css/style.min.css>
+<title>Blog setup</title>
+</head>
+<body><header id=banner>
+<h2><a href=https://julianenglert.com>Julian Englert</a></h2>
+<nav>
+<ul>
+</ul>
+</nav>
+</header>
+<main id=content>
+<article>
+<header id=post-header>
+<h1>Blog setup</h1>
+<div>
+<time>December 4, 2021</time>
+</div>
+</header><h2 id=installation>Installation</h2>
+<ul>
+<li>install git</li>
+<li>install hugo</li>
+</ul>
+<h2 id=set-up-repo-for-github-page>Set up repo for Github Page</h2>
+<ul>
+<li>follow these instructions: <a href=https://pages.github.com/>https://pages.github.com/</a></li>
+</ul>
+<h2 id=create-hugo-site-and-download-theme>Create Hugo site and download theme</h2>
+<ul>
+<li>create new website running <code>hugo new site website</code> which creates the root folder for the site (<code>~/website</code>)</li>
+<li>download a theme with <code>git clone https://theme-url</code> into <code>/themes/theme</code></li>
+</ul>
+<h2 id=add-content-and-test-locally>Add content and test locally</h2>
+<ul>
+<li>modify <code>config.toml</code> and <code>.md</code> files in website directory</li>
+<li>run <code>hugo server</code> in root directory</li>
+<li>see locally hosted website at localhost:1313</li>
+</ul>
+<h2 id=how-to-modify-theme-layouts>How to modify theme layouts</h2>
+<ul>
+<li>copy the <code>.html</code> layouts from the theme&rsquo;s <code>layouts</code> folder to your website&rsquo;s root directory (there should be an empty <code>layouts</code> folder there - if not, create it)</li>
+<li>changes to the <code>.html</code> layouts in the root folder will now change the structure of your website &ndash;> <strong>Hugo will use these layouts over the ones in <code>/themes/&lt;your theme>/layouts</code>.</strong></li>
+<li>make sure to check that you didn&rsquo;t break the site by running <code>hugo server</code></li>
+</ul>
+<h2 id=set-up-github-actions-to-automatically-build-hugo-website>Set up Github Actions to automatically build Hugo website</h2>
+<ul>
+<li>Follow these instructions: <a href=https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html>https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html</a></li>
+</ul>
+<h2 id=git-commands>Git commands</h2>
+<ul>
+<li><code>git add .</code></li>
+<li><code>git commit -m "comment"</code></li>
+<li><code>git push origin main</code></li>
+</ul>
+<h2 id=set-up-obsidian-integration>Set up Obsidian integration</h2>
+<ul>
+<li>create <em>symlink</em> in your Obsidian Vault pointing to the website folder</li>
+<li>access your blog posts, about me page etc directly in your Obsidian Vault</li>
+</ul>
+</article>
+</main><footer id=footer>
+<div class=side-by-side>
+<div style=width:73%;float:left>
+Hosted on <a href=https://pages.github.com/>Github Pages</a>
+<br>
+<a href=https://github.com/LukasJoswiak/etch>Etch</a> theme for <a href=https://gohugo.io/>Hugo</a>
+</div>
+<div style=width:27%;float:right>
+<div id=mc_embed_signup>
+<form action="https://pm.us2.list-manage.com/subscribe/post?u=068b0865245c6dd5a4350878e&id=f384a59a27" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
+<div id=mc_embed_signup_scroll>
+<div class=mc-field-group>
+<input type=email name=EMAIL class="required email" id=mce-EMAIL placeholder="email address">
+</div>
+<div id=mce-responses class=clear>
+<div class=response id=mce-error-response style=display:none></div>
+<div class=response id=mce-success-response style=display:none></div>
+</div>
+<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_068b0865245c6dd5a4350878e_f384a59a27 tabindex=-1></div>
+<div class=btns><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button> or add <a href=https://julianenglert.comindex.xml>RSS</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+<br>
+<br>
+</div>
+</footer>
+</body>
+</html>

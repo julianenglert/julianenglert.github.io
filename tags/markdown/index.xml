@@ -1,74 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on Julian Englert</title><link>https://julianenglert.com/tags/markdown/</link><description>Recent content in markdown on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian integration</title><link>https://julianenglert.com/obsidian-integration/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/obsidian-integration/</guid><description>&lt;p>Use symlink to access website folder from Obsidian vault&lt;/p>
-&lt;pre tabindex="0">&lt;code>ln -s /Users/julian.englert/Library/Mobile\ Documents/com~apple~CloudDocs/julianenglert.github.io/content /Users/julian.englert/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Obsidian
-&lt;/code>&lt;/pre>&lt;p>Deployment:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on Julian Englert</title><link>https://julianenglert.com/tags/markdown/</link><description>Recent content in markdown on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;h2 id="installation">Installation&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html">https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html&lt;/a>&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ul></description></item><item><title>Hugo guide for GitLab</title><link>https://julianenglert.com/hugo-guide-for-gitlab/</link><pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/hugo-guide-for-gitlab/</guid><description>&lt;p>Build a Hugo website and deploy it on GitLab&lt;/p>
-&lt;p>(&lt;em>also see my &lt;a href="https://julianenglert.com/hugo-guide-netlify">earlier guide&lt;/a> for deploying on Netlify&lt;/em>)&lt;/p>
-&lt;h3 id="installation">Installation&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://chocolatey.org/install">install Chocolatey using PowerShell&lt;/a> (open as admin)&lt;/li>
+&lt;li>install git&lt;/li>
+&lt;li>install hugo&lt;/li>
 &lt;/ul>
+&lt;h2 id="set-up-repo-for-github-page">Set up repo for Github Page&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://gohugo.io/getting-started/installing/#chocolatey-windows">install Hugo via Chocolatey&lt;/a> still using PowerShell&lt;/li>
-&lt;li>&lt;a href="https://chocolatey.org/packages/git">install Git via Chocolatey&lt;/a>&lt;/li>
+&lt;li>follow these instructions: &lt;a href="https://pages.github.com/">https://pages.github.com/&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="create-hugo-site-and-download-theme">Create Hugo site and download theme&lt;/h3>
+&lt;h2 id="create-hugo-site-and-download-theme">Create Hugo site and download theme&lt;/h2>
 &lt;ul>
 &lt;li>create new website running &lt;code>hugo new site website&lt;/code> which creates the root folder for the site (&lt;code>~/website&lt;/code>)&lt;/li>
 &lt;li>download a theme with &lt;code>git clone https://theme-url&lt;/code> into &lt;code>/themes/theme&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;h3 id="add-content-and-test-locally">Add content and test locally&lt;/h3>
+&lt;h2 id="add-content-and-test-locally">Add content and test locally&lt;/h2>
 &lt;ul>
 &lt;li>modify &lt;code>config.toml&lt;/code> and &lt;code>.md&lt;/code> files in website directory&lt;/li>
 &lt;li>run &lt;code>hugo server&lt;/code> in root directory&lt;/li>
-&lt;li>see locally hosted website according to changes&lt;/li>
-&lt;/ul>
-&lt;h3 id="host-website-on-gitlabhttpsgohugoiohosting-and-deploymenthosting-on-gitlab">&lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">Host website on GitLab&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>add &lt;code>.gitlab-ci.yml&lt;/code> file containing [^hosting-on-gitlab]&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code>
-image: monachus/hugo
-variables:
-GIT_SUBMODULE_STRATEGY: recursive
-pages:
-script:
-- hugo
-artifacts:
-paths:
-- public
-only:
-- master
-&lt;/code>&lt;/pre>&lt;ul>
-&lt;li>add &lt;code>.gitsubmodules&lt;/code> file containing [^add-git-submodule]&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code>[submodule &amp;quot;themes/theme&amp;quot;]
-path = themes/theme
-url = https://theme-url.git
-&lt;/code>&lt;/pre>&lt;ul>
-&lt;li>create GitLab repository named &lt;em>user.gitlab.io&lt;/em>&lt;/li>
-&lt;li>push local website folder to this repository
-&lt;ul>
-&lt;li>&lt;code>git remote add origin https://gitlab.com/user/user.gitlab.io.git&lt;/code>&lt;/li>
-&lt;li>&lt;code>git add .&lt;/code>&lt;/li>
-&lt;li>&lt;code>git commit -m &amp;quot;comments&amp;quot;&lt;/code>&lt;/li>
-&lt;li>&lt;code>git push -u origin master&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>wait for website to build
-&lt;ul>
-&lt;li>see &lt;code>https://gitlab.com/user/user.gitlab.io/pipelines&lt;/code>&lt;/li>
-&lt;li>when done, access at &lt;code>https://user.gitlab.io&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>set repository to &lt;strong>Public&lt;/strong> if not already by accessing &lt;code>https://gitlab.com/user/user.gitlab.io/edit&lt;/code>&lt;/li>
+&lt;li>see locally hosted website at localhost:1313&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-modify-theme-layouts">How to modify theme layouts&lt;/h2>
-&lt;p>Copy the &lt;code>.html&lt;/code> layouts from the theme&amp;rsquo;s &lt;code>layouts&lt;/code> folder to your website&amp;rsquo;s root directory (there should be an empty &lt;code>layouts&lt;/code> folder there - if not, create it)&lt;/p>
-&lt;p>Whatever changes you now make to the &lt;code>.html&lt;/code> layouts in the root folder will change the structure of your website. &lt;strong>Hugo will use these layouts over the ones in &lt;code>/themes/&amp;lt;your theme&amp;gt;/layouts&lt;/code>.&lt;/strong>&lt;/p>
-&lt;p>Make sure to check that you didn&amp;rsquo;t break the site by running &lt;code>hugo server&lt;/code> before pushing to your hosting server.&lt;/p></description></item><item><title>How to Use Daily Notes in Obsidian</title><link>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</link><pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</guid><description>&lt;p>&lt;strong>&lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.&lt;/p>
+&lt;ul>
+&lt;li>copy the &lt;code>.html&lt;/code> layouts from the theme&amp;rsquo;s &lt;code>layouts&lt;/code> folder to your website&amp;rsquo;s root directory (there should be an empty &lt;code>layouts&lt;/code> folder there - if not, create it)&lt;/li>
+&lt;li>changes to the &lt;code>.html&lt;/code> layouts in the root folder will now change the structure of your website &amp;ndash;&amp;gt; &lt;strong>Hugo will use these layouts over the ones in &lt;code>/themes/&amp;lt;your theme&amp;gt;/layouts&lt;/code>.&lt;/strong>&lt;/li>
+&lt;li>make sure to check that you didn&amp;rsquo;t break the site by running &lt;code>hugo server&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="set-up-github-actions-to-automatically-build-hugo-website">Set up Github Actions to automatically build Hugo website&lt;/h2>
+&lt;ul>
+&lt;li>Follow these instructions: &lt;a href="https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html">https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="git-commands">Git commands&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>git add .&lt;/code>&lt;/li>
+&lt;li>&lt;code>git commit -m &amp;quot;comment&amp;quot;&lt;/code>&lt;/li>
+&lt;li>&lt;code>git push origin main&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="set-up-obsidian-integration">Set up Obsidian integration&lt;/h2>
+&lt;ul>
+&lt;li>create &lt;em>symlink&lt;/em> in your Obsidian Vault pointing to the website folder&lt;/li>
+&lt;li>access your blog posts, about me page etc directly in your Obsidian Vault&lt;/li>
+&lt;/ul></description></item><item><title>How to Use Daily Notes in Obsidian</title><link>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</link><pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</guid><description>&lt;p>&lt;strong>&lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.&lt;/p>
 &lt;p>The ability to form &lt;strong>&lt;code>[[connections]]&lt;/code>&lt;/strong> between them mimics the way ideas are captured in your brain, with the distinction that Obsidian never forgets: Built on top of a local folder of Markdown files, it is the perfect tool to construct a &amp;ldquo;second brain&amp;rdquo;.&lt;/p>
 &lt;p>In this series I&amp;rsquo;ll show some of the workflows I&amp;rsquo;ve found to be working well with Obsidian.&lt;/p>
 &lt;p>Here: &lt;strong>Daily notes with capture note&lt;/strong>&lt;/p>
@@ -181,23 +151,7 @@ Return
 &lt;p>In PlayBooks, there is no way to highlight images and figures directly. Make sure to highlight the caption (&lt;mark>Figure 3.1: This graph shows XYZ&amp;hellip;&lt;/mark>) if there is one, to find where to insert the missing figure later in your knowledge management system&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Hugo guide Netlify</title><link>https://julianenglert.com/hugo-guide-netlify/</link><pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/hugo-guide-netlify/</guid><description>&lt;p>This article shows how create a static website with Hugo on your local machine, push it to GitHub and deploy it via Netlify.&lt;/p>
-&lt;p>&lt;strong>Steps&lt;/strong> (all on Windows 10)&lt;/p>
-&lt;p>Recommended tools:&lt;/p>
-&lt;ul>
-&lt;li>Sublime Text (&lt;a href="https://www.sublimetext.com/">https://www.sublimetext.com/&lt;/a>)&lt;/li>
-&lt;li>PowerToys for Markdown preview in Windows Explorer (&lt;a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys&lt;/a>)&lt;/li>
-&lt;/ul>
-&lt;p>Install Chocolatey using PowerShell (open as admin) (&lt;a href="https://chocolatey.org/install">https://chocolatey.org/install&lt;/a>)&lt;/p>
-&lt;p>Install Hugo via Chocolatey still using PowerShell (&lt;a href="https://gohugo.io/getting-started/installing/#chocolatey-windows">https://gohugo.io/getting-started/installing/#chocolatey-windows&lt;/a>)&lt;/p>
-&lt;p>Install Git via Chocolatey (&lt;a href="https://chocolatey.org/packages/git">https://chocolatey.org/packages/git&lt;/a>)&lt;/p>
-&lt;p>Use terminal commands (&lt;a href="https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/">https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/&lt;/a>) to navigate to directory for new test site (doesn&amp;rsquo;t really matter where, just so you can find it in the file explorer again)&lt;/p>
-&lt;p>Follow Hugo Quick Start Guide (&lt;a href="https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site">https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site&lt;/a>) using a theme of your choice&lt;/p>
-&lt;p>If you get an error along the lines of &amp;ldquo;bare keys cannot contain &amp;lsquo;\x00&amp;rsquo;&amp;rdquo;, open the &lt;em>config.toml&lt;/em> using a text editor and fix the line that is supposed to say &lt;code>theme = &amp;quot;theme_of_your_choice&amp;quot;&lt;/code>. If the file contains lots of &lt;code>3a2f 2f6a 756c 6961 6e2d 656e 676c 6572&lt;/code> or similar, it&amp;rsquo;s hexadecimal and you have to reopen with UTF encoding.&lt;/p>
-&lt;p>Use the file explorer to move some of the &lt;em>exampleSite&lt;/em> content into your actual website directory and play in &lt;em>config.toml&lt;/em> with the parameters (website title, categories, date format etc) to get a better feel for how things work&lt;/p>
-&lt;p>Create a new GitHub repository in your web browser&lt;/p>
-&lt;p>Use the Git Bash command line to push the local website directory to GitHub (&lt;a href="https://www.youtube.com/watch?v=ibNqauPoicg">https://www.youtube.com/watch?v=ibNqauPoicg&lt;/a>)&lt;/p>
-&lt;p>Use Netlify (&lt;a href="https://www.netlify.com/">https://www.netlify.com/&lt;/a>) to connect to your GitHub account, select the repository with the website and deploy it&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://julianenglert.com/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://julianenglert.com/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;/section></description></item><item><title>Markdown Syntax Guide</title><link>https://julianenglert.com/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://julianenglert.com/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
 &lt;h1 id="h1">H1&lt;/h1>
