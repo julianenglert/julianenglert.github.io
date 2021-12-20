@@ -3,6 +3,7 @@ author = "Julian Englert"
 title = "Hugo guide Netlify"
 date = "2020-08-24"
 description = "Tutorial for how to create static website and deploy with Netlify"
+draft = "true"
 tags = [
     "markdown",
     "Hugo",

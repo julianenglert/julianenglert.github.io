@@ -3,6 +3,7 @@ author = "Julian Englert"
 title = "Hugo guide for GitLab"
 date = "2020-11-06"
 description = "Build a Hugo website and deploy it on GitLab"
+draft = "true"
 tags = [
 "guide",
 "Hugo",
