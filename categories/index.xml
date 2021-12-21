@@ -1,44 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Julian Englert</title><link>https://julianenglert.com/categories/</link><description>Recent content in Categories on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;h2 id="installation">Installation&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Julian Englert</title><link>https://julianenglert.com/categories/</link><description>Recent content in Categories on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;blockquote>
+&lt;p>Walk-through of how this blog is set up&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="installation">Installation&lt;/h3>
 &lt;ul>
-&lt;li>install git&lt;/li>
-&lt;li>install hugo&lt;/li>
+&lt;li>&lt;a href="https://github.com/git-guides/install-git">install git&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gohugo.io/getting-started/installing/">install hugo&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="set-up-repo-for-github-page">Set up repo for Github Page&lt;/h2>
+&lt;h3 id="set-up-repo-for-github-page">Set up repo for Github Page&lt;/h3>
 &lt;ul>
-&lt;li>follow these instructions: &lt;a href="https://pages.github.com/">https://pages.github.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pages.github.com/">follow these instructions&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="create-hugo-site-and-download-theme">Create Hugo site and download theme&lt;/h2>
+&lt;h3 id="create-hugo-site-and-download-theme">Create Hugo site and download theme&lt;/h3>
 &lt;ul>
-&lt;li>create new website running &lt;code>hugo new site website&lt;/code> which creates the root folder for the site (&lt;code>~/website&lt;/code>)&lt;/li>
-&lt;li>download a theme with &lt;code>git clone https://theme-url&lt;/code> into &lt;code>/themes/theme&lt;/code>&lt;/li>
+&lt;li>create new Hugo site by running &lt;code>hugo new site &amp;lt;your repo name&amp;gt; --force&lt;/code> with the name of the Github Pages repo you downloaded&lt;/li>
+&lt;li>download a theme with &lt;code>git clone https://theme-url /themes/&amp;lt;theme name&amp;gt;&lt;/code>, for example the &lt;a href="https://github.com/LukasJoswiak/etch">etch&lt;/a> theme&lt;/li>
 &lt;/ul>
-&lt;h2 id="add-content-and-test-locally">Add content and test locally&lt;/h2>
+&lt;h3 id="add-content-and-test-locally">Add content and test locally&lt;/h3>
 &lt;ul>
 &lt;li>modify &lt;code>config.toml&lt;/code> and &lt;code>.md&lt;/code> files in website directory&lt;/li>
 &lt;li>run &lt;code>hugo server&lt;/code> in root directory&lt;/li>
-&lt;li>see locally hosted website at localhost:1313&lt;/li>
+&lt;li>see locally hosted website at http://localhost:1313/&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-modify-theme-layouts">How to modify theme layouts&lt;/h2>
+&lt;h3 id="how-to-modify-theme-layouts">How to modify theme layouts&lt;/h3>
 &lt;ul>
 &lt;li>copy the &lt;code>.html&lt;/code> layouts from the theme&amp;rsquo;s &lt;code>layouts&lt;/code> folder to your website&amp;rsquo;s root directory (there should be an empty &lt;code>layouts&lt;/code> folder there - if not, create it)&lt;/li>
 &lt;li>changes to the &lt;code>.html&lt;/code> layouts in the root folder will now change the structure of your website &amp;ndash;&amp;gt; &lt;strong>Hugo will use these layouts over the ones in &lt;code>/themes/&amp;lt;your theme&amp;gt;/layouts&lt;/code>.&lt;/strong>&lt;/li>
 &lt;li>make sure to check that you didn&amp;rsquo;t break the site by running &lt;code>hugo server&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;h2 id="set-up-github-actions-to-automatically-build-hugo-website">Set up Github Actions to automatically build Hugo website&lt;/h2>
+&lt;h3 id="set-up-github-actions-to-automatically-build-hugo-website">Set up Github Actions to automatically build Hugo website&lt;/h3>
 &lt;ul>
 &lt;li>Follow these instructions: &lt;a href="https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html">https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="git-commands">Git commands&lt;/h2>
+&lt;h3 id="git-commands">Git commands&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>git add .&lt;/code>&lt;/li>
 &lt;li>&lt;code>git commit -m &amp;quot;comment&amp;quot;&lt;/code>&lt;/li>
 &lt;li>&lt;code>git push origin main&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;h2 id="set-up-obsidian-integration">Set up Obsidian integration&lt;/h2>
+&lt;h3 id="set-up-obsidian-integration">Set up Obsidian integration&lt;/h3>
 &lt;ul>
 &lt;li>create &lt;em>symlink&lt;/em> in your Obsidian Vault pointing to the website folder&lt;/li>
 &lt;li>access your blog posts, about me page etc directly in your Obsidian Vault&lt;/li>
-&lt;/ul></description></item><item><title>How to Use Daily Notes in Obsidian</title><link>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</link><pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</guid><description>&lt;p>&lt;strong>&lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.&lt;/p>
+&lt;/ul>
+&lt;p>&lt;img src="https://julianenglert.com/githubpages-obsidian.png" alt="integration">&lt;/p></description></item><item><title>How to Use Daily Notes in Obsidian</title><link>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</link><pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/how-to-use-daily-notes-in-obsidian/</guid><description>&lt;p>&lt;strong>&lt;a href="https://obsidian.md">Obsidian&lt;/a>&lt;/strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.&lt;/p>
 &lt;p>The ability to form &lt;strong>&lt;code>[[connections]]&lt;/code>&lt;/strong> between them mimics the way ideas are captured in your brain, with the distinction that Obsidian never forgets: Built on top of a local folder of Markdown files, it is the perfect tool to construct a &amp;ldquo;second brain&amp;rdquo;.&lt;/p>
 &lt;p>In this series I&amp;rsquo;ll show some of the workflows I&amp;rsquo;ve found to be working well with Obsidian.&lt;/p>
 &lt;p>Here: &lt;strong>Daily notes with capture note&lt;/strong>&lt;/p>

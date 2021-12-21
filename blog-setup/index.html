@@ -20,47 +20,51 @@
 <div>
 <time>December 4, 2021</time>
 </div>
-</header><h2 id=installation>Installation</h2>
+</header><blockquote>
+<p>Walk-through of how this blog is set up</p>
+</blockquote>
+<h3 id=installation>Installation</h3>
 <ul>
-<li>install git</li>
-<li>install hugo</li>
+<li><a href=https://github.com/git-guides/install-git>install git</a></li>
+<li><a href=https://gohugo.io/getting-started/installing/>install hugo</a></li>
 </ul>
-<h2 id=set-up-repo-for-github-page>Set up repo for Github Page</h2>
+<h3 id=set-up-repo-for-github-page>Set up repo for Github Page</h3>
 <ul>
-<li>follow these instructions: <a href=https://pages.github.com/>https://pages.github.com/</a></li>
+<li><a href=https://pages.github.com/>follow these instructions</a></li>
 </ul>
-<h2 id=create-hugo-site-and-download-theme>Create Hugo site and download theme</h2>
+<h3 id=create-hugo-site-and-download-theme>Create Hugo site and download theme</h3>
 <ul>
-<li>create new website running <code>hugo new site website</code> which creates the root folder for the site (<code>~/website</code>)</li>
-<li>download a theme with <code>git clone https://theme-url</code> into <code>/themes/theme</code></li>
+<li>create new Hugo site by running <code>hugo new site &lt;your repo name> --force</code> with the name of the Github Pages repo you downloaded</li>
+<li>download a theme with <code>git clone https://theme-url /themes/&lt;theme name></code>, for example the <a href=https://github.com/LukasJoswiak/etch>etch</a> theme</li>
 </ul>
-<h2 id=add-content-and-test-locally>Add content and test locally</h2>
+<h3 id=add-content-and-test-locally>Add content and test locally</h3>
 <ul>
 <li>modify <code>config.toml</code> and <code>.md</code> files in website directory</li>
 <li>run <code>hugo server</code> in root directory</li>
-<li>see locally hosted website at localhost:1313</li>
+<li>see locally hosted website at http://localhost:1313/</li>
 </ul>
-<h2 id=how-to-modify-theme-layouts>How to modify theme layouts</h2>
+<h3 id=how-to-modify-theme-layouts>How to modify theme layouts</h3>
 <ul>
 <li>copy the <code>.html</code> layouts from the theme&rsquo;s <code>layouts</code> folder to your website&rsquo;s root directory (there should be an empty <code>layouts</code> folder there - if not, create it)</li>
 <li>changes to the <code>.html</code> layouts in the root folder will now change the structure of your website &ndash;> <strong>Hugo will use these layouts over the ones in <code>/themes/&lt;your theme>/layouts</code>.</strong></li>
 <li>make sure to check that you didn&rsquo;t break the site by running <code>hugo server</code></li>
 </ul>
-<h2 id=set-up-github-actions-to-automatically-build-hugo-website>Set up Github Actions to automatically build Hugo website</h2>
+<h3 id=set-up-github-actions-to-automatically-build-hugo-website>Set up Github Actions to automatically build Hugo website</h3>
 <ul>
 <li>Follow these instructions: <a href=https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html>https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html</a></li>
 </ul>
-<h2 id=git-commands>Git commands</h2>
+<h3 id=git-commands>Git commands</h3>
 <ul>
 <li><code>git add .</code></li>
 <li><code>git commit -m "comment"</code></li>
 <li><code>git push origin main</code></li>
 </ul>
-<h2 id=set-up-obsidian-integration>Set up Obsidian integration</h2>
+<h3 id=set-up-obsidian-integration>Set up Obsidian integration</h3>
 <ul>
 <li>create <em>symlink</em> in your Obsidian Vault pointing to the website folder</li>
 <li>access your blog posts, about me page etc directly in your Obsidian Vault</li>
 </ul>
+<p><img src=/githubpages-obsidian.png alt=integration></p>
 </article>
 </main><footer id=footer>
 <div class=side-by-side>
