@@ -6,7 +6,7 @@ title: "Home"
 
 ### About me
 
-**Interested in**: bio / nanotech, blockchain, longevity, space expansion
+**Interested in**: bio / nanotech, blockchain, longevity, space colonization
 
 **Currently**: founding [Adaptyv Biosystems](https://adaptyvbio.com), a protein engineering company
 
