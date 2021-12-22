@@ -40,5 +40,4 @@ draft = "false"
 - create *symlink* in your Obsidian Vault pointing to the website folder
 - access your blog posts, about me page etc directly in your Obsidian Vault 
 
-
 ![integration](/githubpages-obsidian.png)
