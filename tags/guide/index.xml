@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guide on Julian Englert</title><link>https://julianenglert.com/tags/guide/</link><description>Recent content in guide on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/tags/guide/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guide on Julian Englert</title><link>https://julianenglert.com/tags/guide/</link><description>Recent content in guide on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/tags/guide/index.xml" rel="self" type="application/rss+xml"/><item><title>iOS shortcut to record voice memos and transcribe them to Obsidian</title><link>https://julianenglert.com/ios-shortcut-to-record-voice-memos-and-transcribe-them-to-obsidian/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/ios-shortcut-to-record-voice-memos-and-transcribe-them-to-obsidian/</guid><description>&lt;blockquote>
+&lt;p>This workflow allows you to hold the lock button off your iPhone, say &amp;ldquo;dictate&amp;rdquo; and then dictate a note with the transcribed text being directly linked to your obsidian daily note. In fact these sentences were dictated using this shortcut :)&lt;/p>
+&lt;/blockquote>
+&lt;p>![[obsidian.PNG]]&lt;/p>
+&lt;h3 id="setup">Setup&lt;/h3>
+&lt;ul>
+&lt;li>Create new iOS Shortcut (or copy mine &lt;a href="https://www.icloud.com/shortcuts/9c48536a66ec4ab4b1e9192f06e2a632">here&lt;/a>)
+&lt;ul>
+&lt;li>&lt;em>Dictate Text&lt;/em>&lt;/li>
+&lt;li>&lt;em>Text&lt;/em>
+&lt;ul>
+&lt;li>one new line&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;em>Append to File&lt;/em>
+&lt;ul>
+&lt;li>Append &amp;ldquo;&lt;strong>Dictated text&lt;/strong> &lt;code>space&lt;/code> &lt;strong>Text&lt;/strong>&amp;rdquo;&amp;quot; to file path &lt;em>Current Date&lt;/em> &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Go to settings and change Siri settings to trigger on side button&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>![[shortcuts.PNG]]&lt;/th>
+&lt;th>![[siri.PNG]]&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
+&lt;ul>
+&lt;li>On your Mac/Windows, go to the iCloud folder where Shortcuts saves file
+&lt;ul>
+&lt;li>located in &lt;code>/Users/&amp;lt;username&amp;gt;/Library/Mobile\ Documents/iCloud~is~workflow~my~workflows/Documents/&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Symlink this folder into your Obsidian Vault
+&lt;ul>
+&lt;li>open terminal and run &lt;code>ln -s &amp;lt;path to of your Obsidian vault&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Install the plugin &lt;a href="https://github.com/deathau/txt-as-md-obsidian">txt as md&lt;/a> to open &lt;code>.txt&lt;/code> files directly in Obsidian &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>Create a template that directly links the text file with transcribed notes to your daily note for a given day
+&lt;ul>
+&lt;li>e.g. using &lt;a href="https://github.com/SilentVoid13/Templater">Templater&lt;/a> I include this line in my daily note template: &lt;code>[[Documents/Memos/&amp;lt;% tp.date.now() %&amp;gt;.txt]]]]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>Using &lt;em>Append to file&lt;/em> instead of &lt;em>Save to file&lt;/em> prevents creating new files for each recording. Triggering the shortcut for the first time on a given day will still create a new txt file with the transcribed text but for all subsequent recordings on the same day, the transcribed text will be appended to the already existing file. Appending &lt;em>Dictated Text&lt;/em> &lt;strong>and&lt;/strong> &lt;em>Text&lt;/em> (with a new line in it) will create a new line after every transcribed block.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>I didn&amp;rsquo;t figure out how to make the iOS shortcut save the transcribed text as markdown. There&amp;rsquo;s an option to save as rich text but the resulting file was still .txt for me. There&amp;rsquo;s another shortcut building block called &amp;ldquo;Convert rich text to markdown&amp;rdquo; but applying it afterwards didn&amp;rsquo;t help, instead, it just yielded a .txt with a markdown image link in it -.-&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;blockquote>
 &lt;p>Walk-through of how this blog is set up&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="installation">Installation&lt;/h3>
