@@ -7,7 +7,7 @@ draft = "false"
 
 >This workflow allows you to hold the lock button off your iPhone, say "dictate" and then dictate a note with the transcribed text being directly linked to your obsidian daily note. In fact these sentences were dictated using this shortcut :)
 
-![](/obsidian-voice-notes/obsidian.PNG)
+![](/obsidian-voice-notes/obsidian.png)
 
 ### Setup
 - Create new iOS Shortcut (or copy mine [here](https://www.icloud.com/shortcuts/9c48536a66ec4ab4b1e9192f06e2a632))
@@ -19,7 +19,7 @@ draft = "false"
 - Go to settings and change Siri settings to trigger on side button
 
 
-|<img src="/obsidian-voice-notes/shortcut.PNG" alt="shortcut" width="200"/>|<img src="/obsidian-voice-notes/siri.PNG" alt="siri" width="200"/>|
+|<img src="/obsidian-voice-notes/shortcut.png" alt="shortcut" width="200"/>|<img src="/obsidian-voice-notes/siri.png" alt="siri" width="200"/>|
 |---|---|
 
 
