@@ -15,7 +15,7 @@ draft = "false"
 	- *Text*
 		- one new line 
 	- *Append to File* 
-		- Append "**Dictated text** `space` **Text**"" to file path *Current Date* [^append]
+		- Append "**Dictated text** `space` **Text**" to file path *Current Date* [^append]
 - Go to settings and change Siri settings to trigger on side button
 
 |![](/obsidian-voice-notes/shortcuts.PNG)| ![](/obsidian-voice-notes/siri.PNG)| 
