@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on Julian Englert</title><link>https://julianenglert.com/tags/obsidian/</link><description>Recent content in Obsidian on Julian Englert</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://julianenglert.com/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>iOS shortcut to record voice memos and transcribe them to Obsidian</title><link>https://julianenglert.com/ios-shortcut-to-record-voice-memos-and-transcribe-them-to-obsidian/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/ios-shortcut-to-record-voice-memos-and-transcribe-them-to-obsidian/</guid><description>&lt;blockquote>
 &lt;p>This workflow allows you to hold the lock button off your iPhone, say &amp;ldquo;dictate&amp;rdquo; and then dictate a note with the transcribed text being directly linked to your obsidian daily note. In fact these sentences were dictated using this shortcut :)&lt;/p>
 &lt;/blockquote>
-&lt;p>![[obsidian.PNG]]&lt;/p>
+&lt;p>&lt;img src="https://julianenglert.com/obsidian-voice-notes/obsidian.PNG" alt="">&lt;/p>
 &lt;h3 id="setup">Setup&lt;/h3>
 &lt;ul>
 &lt;li>Create new iOS Shortcut (or copy mine &lt;a href="https://www.icloud.com/shortcuts/9c48536a66ec4ab4b1e9192f06e2a632">here&lt;/a>)
@@ -24,8 +24,8 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>![[shortcuts.PNG]]&lt;/th>
-&lt;th>![[siri.PNG]]&lt;/th>
+&lt;th>&lt;img src="https://julianenglert.com/obsidian-voice-notes/shortcuts.PNG" alt="">&lt;/th>
+&lt;th>&lt;img src="https://julianenglert.com/obsidian-voice-notes/siri.PNG" alt="">&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;/table>
