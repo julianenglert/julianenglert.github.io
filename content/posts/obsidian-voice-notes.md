@@ -2,7 +2,7 @@
 author = "Julian Englert"
 title = "iOS shortcut to record voice memos and transcribe them to Obsidian"
 date = "2021-12-31"
-draft = "true"
+draft = "false"
 +++
 
 >This workflow allows you to hold the lock button off your iPhone, say "dictate" and then dictate a note with the transcribed text being directly linked to your obsidian daily note. In fact these sentences were dictated using this shortcut :)
