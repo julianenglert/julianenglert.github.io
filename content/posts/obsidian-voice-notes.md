@@ -18,9 +18,9 @@ draft = "false"
 		- Append "**Dictated text** `space` **Text**" to file path *Current Date* [^append]
 - Go to settings and change Siri settings to trigger on side button
 
-|![](/obsidian-voice-notes/shortcuts.PNG)| ![](/obsidian-voice-notes/siri.PNG)| 
-|----|----|
 
+|<img src="/obsidian-voice-notes/shortcut.PNG" alt="shortcut" width="200"/>|<img src="/obsidian-voice-notes/siri.PNG" alt="siri" width="200"/>|
+|---|---|
 
 
 - On your Mac/Windows, go to the iCloud folder where Shortcuts saves files
