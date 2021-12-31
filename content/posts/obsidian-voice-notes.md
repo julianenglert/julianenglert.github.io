@@ -23,7 +23,7 @@ draft = "false"
 
 
 
-- On your Mac/Windows, go to the iCloud folder where Shortcuts saves file
+- On your Mac/Windows, go to the iCloud folder where Shortcuts saves files
 	- located in `/Users/<username>/Library/Mobile\ Documents/iCloud~is~workflow~my~workflows/Documents/`
 - Symlink this folder into your Obsidian Vault
 	- open terminal and run `ln -s <path to of your Obsidian vault>`
