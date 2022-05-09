@@ -1,74 +1,12 @@
-<!doctype html><html><head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Blog">
-<link rel="shortcut icon" href=https://julianenglert.com/favicon.ico>
-<link rel=stylesheet href=/css/style.min.css>
-<title>How to Use Daily Notes in Obsidian</title>
-</head>
-<body><header id=banner>
-<h2><a href=https://julianenglert.com/>Julian Englert</a></h2>
-<nav>
-<ul>
-</ul>
-</nav>
-</header>
-<main id=content>
-<article>
-<header id=post-header>
-<h1>How to Use Daily Notes in Obsidian</h1>
-<div>
-<time>September 21, 2020</time>
-</div>
-</header><p><strong><a href=https://obsidian.md>Obsidian</a></strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.</p>
-<p>The ability to form <strong><code>[[connections]]</code></strong> between them mimics the way ideas are captured in your brain, with the distinction that Obsidian never forgets: Built on top of a local folder of Markdown files, it is the perfect tool to construct a &ldquo;second brain&rdquo;.</p>
-<p>In this series I&rsquo;ll show some of the workflows I&rsquo;ve found to be working well with Obsidian.</p>
-<p>Here: <strong>Daily notes with capture note</strong></p>
-<h2 id=purpose>Purpose</h2>
-<ul>
-<li>process incoming information (thoughts, ideas, recommendations)</li>
-<li>write down tasks for the day and hold yourself accountable to them</li>
-<li>keep track of content you consume and serve as springboard for notes taken on podcasts, articles, etc</li>
-</ul>
-<h2 id=main>Main</h2>
-<p>The <strong><code>000 Capture</code></strong><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> note is at the heart of my day to day note-taking in Obsidian.</p>
-<p><img src=/obsidian_daily_notes/capture_desktop.png alt></p>
-<p>It&rsquo;s the universal list of all tasks and todos, collects reading / podcast / Netflix recommendations and serves as a shopping list.</p>
-<p>In it I plan out my day and develop thoughts into notes.</p>
-<p>I use it to keep track of all the things I&rsquo;m doing through out the day (writing emails, planning things, writing or documenting code, talking to people etc.).</p>
-<p>Markdown allows you to create checkbox lists with nested items so finished tasks can simply be crossed out.</p>
-<p>For meetings, I create a note with discussion topics or minutes directly from the capture note.</p>
-<p>I create a note for each article I read during the day with some basic metadata with author information, date of publishing and reading, link and tags. This allows organizing my collection of notes via tags and MOCs (<em>maps of concepts</em>).</p>
-<p><img src=/obsidian_daily_notes/reading_notes.png alt></p>
-<p>Using one of the various Markdown editors for iOS, I can add thoughts, tasks, and recommendations to my capture note on mobile too<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
-<p><img src=/obsidian_daily_notes/capture_mobile.png alt></p>
-<p>At the end of the day, I copy all completed tasks, readings and meeting notes of the day into the corresponding daily note.</p>
-<p><img src=/obsidian_daily_notes/daily_note.png alt></p>
-<p>Over time, the daily notes thus become a repository that keeps track of tasks, projects and content consumed.</p>
-<p>Unfinished tasks stay in the capture note. There, after doing my daily planning and prioritization on the next day I either pick them up or discard them.</p>
-<p>On the top of my daily notes you can see a section with links to yesterday&rsquo;s and tomorrow&rsquo;s note. This allows me to quickly navigate between daily notes to revisit them or to move tasks from one day to the next.</p>
-<p><img src=/obsidian_daily_notes/daily_note_header.png alt></p>
-<p>The Markdown for this header template can just be copied from one daily note to another and adjusted for each day or you can use a script to paste it with a shortcut of your choice (here with <a href=https://autohotkey.com/>Autohokey</a><sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>)</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=err>&lt;</span><span class=p>&lt;</span> <span class=nt>Yesterday</span> <span class=sb>`[[link to yesterday&#39;s daily note]]`</span> <span class=err>|</span> <span class=sb>`[[link to tomorrows&#39;s daily note]]`</span> <span class=na>Tomorrow</span> <span class=p>&gt;</span>&gt;
-
-
-<span class=sb>`[[link to capture note]]`</span>
-
----
-
-your notes
-
-</code></pre></div><section class=footnotes role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn:1 role=doc-endnote>
-<p>the <strong><code>000</code></strong> in the file name ensures that the note is always on top in the file explorer pane&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:2 role=doc-endnote>
-<p>this requires using iCloud as directory for the Obsidian Vault&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:3 role=doc-endnote>
-<pre tabindex=0><code class=language-ahk data-lang=ahk>; Syntax
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog"><link rel="shortcut icon" href=https://julianenglert.com/favicon.ico><link rel=stylesheet href=/css/style.min.css><title>How to Use Daily Notes in Obsidian</title></head><body><header id=banner><h2><a href=https://julianenglert.com/>Julian Englert</a></h2><nav><ul></ul></nav></header><main id=content><article><header id=post-header><h1>How to Use Daily Notes in Obsidian</h1><div><time>September 21, 2020</time></div></header><p><strong><a href=https://obsidian.md>Obsidian</a></strong> is a powerful knowledge management tool that allows you to take notes in a networked fashion.</p><p>The ability to form <strong><code>[[connections]]</code></strong> between them mimics the way ideas are captured in your brain, with the distinction that Obsidian never forgets: Built on top of a local folder of Markdown files, it is the perfect tool to construct a &ldquo;second brain&rdquo;.</p><p>In this series I&rsquo;ll show some of the workflows I&rsquo;ve found to be working well with Obsidian.</p><p>Here: <strong>Daily notes with capture note</strong></p><h2 id=purpose>Purpose</h2><ul><li>process incoming information (thoughts, ideas, recommendations)</li><li>write down tasks for the day and hold yourself accountable to them</li><li>keep track of content you consume and serve as springboard for notes taken on podcasts, articles, etc</li></ul><h2 id=main>Main</h2><p>The <strong><code>000 Capture</code></strong><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> note is at the heart of my day to day note-taking in Obsidian.</p><p><img src=/obsidian_daily_notes/capture_desktop.png alt></p><p>It&rsquo;s the universal list of all tasks and todos, collects reading / podcast / Netflix recommendations and serves as a shopping list.</p><p>In it I plan out my day and develop thoughts into notes.</p><p>I use it to keep track of all the things I&rsquo;m doing through out the day (writing emails, planning things, writing or documenting code, talking to people etc.).</p><p>Markdown allows you to create checkbox lists with nested items so finished tasks can simply be crossed out.</p><p>For meetings, I create a note with discussion topics or minutes directly from the capture note.</p><p>I create a note for each article I read during the day with some basic metadata with author information, date of publishing and reading, link and tags. This allows organizing my collection of notes via tags and MOCs (<em>maps of concepts</em>).</p><p><img src=/obsidian_daily_notes/reading_notes.png alt></p><p>Using one of the various Markdown editors for iOS, I can add thoughts, tasks, and recommendations to my capture note on mobile too<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p><p><img src=/obsidian_daily_notes/capture_mobile.png alt></p><p>At the end of the day, I copy all completed tasks, readings and meeting notes of the day into the corresponding daily note.</p><p><img src=/obsidian_daily_notes/daily_note.png alt></p><p>Over time, the daily notes thus become a repository that keeps track of tasks, projects and content consumed.</p><p>Unfinished tasks stay in the capture note. There, after doing my daily planning and prioritization on the next day I either pick them up or discard them.</p><p>On the top of my daily notes you can see a section with links to yesterday&rsquo;s and tomorrow&rsquo;s note. This allows me to quickly navigate between daily notes to revisit them or to move tasks from one day to the next.</p><p><img src=/obsidian_daily_notes/daily_note_header.png alt></p><p>The Markdown for this header template can just be copied from one daily note to another and adjusted for each day or you can use a script to paste it with a shortcut of your choice (here with <a href=https://autohotkey.com/>Autohokey</a><sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=err>&lt;</span><span class=p>&lt;</span> <span class=nt>Yesterday</span> <span class=sb>`[[link to yesterday&#39;s daily note]]`</span> <span class=err>|</span> <span class=sb>`[[link to tomorrows&#39;s daily note]]`</span> <span class=na>Tomorrow</span> <span class=p>&gt;</span>&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=sb>`[[link to capture note]]`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>your notes
+</span></span></code></pre></div><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>the <strong><code>000</code></strong> in the file name ensures that the note is always on top in the file explorer pane&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>this requires using iCloud as directory for the Obsidian Vault&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><pre tabindex=0><code class=language-ahk data-lang=ahk>; Syntax
 ; ^ = CTRL
 ; ! = ALT
 ; + = SHIFT
@@ -93,38 +31,4 @@ your notes
 	Send, {Enter}---
 	Send, {Enter}
 Return
-
-</code></pre>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li>
-</ol>
-</section></article>
-</main><footer id=footer>
-<div class=side-by-side>
-<div style=width:73%;float:left>
-Hosted on <a href=https://pages.github.com/>Github Pages</a>
-<br>
-<a href=https://github.com/LukasJoswiak/etch>Etch</a> theme for <a href=https://gohugo.io/>Hugo</a>
-</div>
-<div style=width:27%;float:right>
-<div id=mc_embed_signup>
-<form action="https://pm.us2.list-manage.com/subscribe/post?u=068b0865245c6dd5a4350878e&id=f384a59a27" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
-<div id=mc_embed_signup_scroll>
-<div class=mc-field-group>
-<input type=email name=EMAIL class="required email" id=mce-EMAIL placeholder="email address">
-</div>
-<div id=mce-responses class=clear>
-<div class=response id=mce-error-response style=display:none></div>
-<div class=response id=mce-success-response style=display:none></div>
-</div>
-<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_068b0865245c6dd5a4350878e_f384a59a27 tabindex=-1></div>
-<div class=btns><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button> or add <a href=https://julianenglert.com/index.xml>RSS</a>
-</div>
-</div>
-</form>
-</div>
-</div>
-<br>
-<br>
-</div>
-</footer>
-</body>
-</html>
+</code></pre>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li></ol></div></article></main><footer id=footer><div class=side-by-side><div style=width:73%;float:left>Hosted on <a href=https://pages.github.com/>Github Pages</a><br><a href=https://github.com/LukasJoswiak/etch>Etch</a> theme for <a href=https://gohugo.io/>Hugo</a></div><div style=width:27%;float:right><div id=mc_embed_signup><form action="https://pm.us2.list-manage.com/subscribe/post?u=068b0865245c6dd5a4350878e&id=f384a59a27" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate><div id=mc_embed_signup_scroll><div class=mc-field-group><input type=email name=EMAIL class="required email" id=mce-EMAIL placeholder="email address"></div><div id=mce-responses class=clear><div class=response id=mce-error-response style=display:none></div><div class=response id=mce-success-response style=display:none></div></div><div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_068b0865245c6dd5a4350878e_f384a59a27 tabindex=-1></div><div class=btns><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button> or add <a href=https://julianenglert.com/index.xml>RSS</a></div></div></form></div></div><br><br></div></footer></body></html>

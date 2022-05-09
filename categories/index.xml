@@ -47,17 +47,17 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>Using &lt;em>Append to file&lt;/em> instead of &lt;em>Save to file&lt;/em> prevents creating new files for each recording. Triggering the shortcut for the first time on a given day will still create a new txt file with the transcribed text but for all subsequent recordings on the same day, the transcribed text will be appended to the already existing file. Appending &lt;em>Dictated Text&lt;/em> &lt;strong>and&lt;/strong> &lt;em>Text&lt;/em> (with a new line in it) will create a new line after every transcribed block.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>I didn&amp;rsquo;t figure out how to make the iOS shortcut save the transcribed text as markdown. There&amp;rsquo;s an option to save as rich text but the resulting file was still .txt for me. There&amp;rsquo;s another shortcut building block called &amp;ldquo;Convert rich text to markdown&amp;rdquo; but applying it afterwards didn&amp;rsquo;t help, instead, it just yielded a .txt with a markdown image link in it -.-&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>Blog setup</title><link>https://julianenglert.com/blog-setup/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://julianenglert.com/blog-setup/</guid><description>&lt;blockquote>
 &lt;p>Walk-through of how this blog is set up&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="installation">Installation&lt;/h3>
@@ -88,7 +88,7 @@
 &lt;/ul>
 &lt;h3 id="set-up-github-actions-to-automatically-build-hugo-website">Set up Github Actions to automatically build Hugo website&lt;/h3>
 &lt;ul>
-&lt;li>Follow these instructions: &lt;a href="https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html">https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://carpentries-incubator.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html">follow these instructions&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="git-commands">Git commands&lt;/h3>
 &lt;ul>
@@ -130,20 +130,24 @@
 &lt;p>On the top of my daily notes you can see a section with links to yesterday&amp;rsquo;s and tomorrow&amp;rsquo;s note. This allows me to quickly navigate between daily notes to revisit them or to move tasks from one day to the next.&lt;/p>
 &lt;p>&lt;img src="https://julianenglert.com/obsidian_daily_notes/daily_note_header.png" alt="">&lt;/p>
 &lt;p>The Markdown for this header template can just be copied from one daily note to another and adjusted for each day or you can use a script to paste it with a shortcut of your choice (here with &lt;a href="https://autohotkey.com/">Autohokey&lt;/a>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>)&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="err">&amp;lt;&lt;/span>&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">Yesterday&lt;/span> &lt;span class="sb">`[[link to yesterday&amp;#39;s daily note]]`&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="sb">`[[link to tomorrows&amp;#39;s daily note]]`&lt;/span> &lt;span class="na">Tomorrow&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>&amp;gt;
-&lt;span class="sb">`[[link to capture note]]`&lt;/span>
----
-your notes
-&lt;/code>&lt;/pre>&lt;/div>&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="err">&amp;lt;&lt;/span>&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">Yesterday&lt;/span> &lt;span class="sb">`[[link to yesterday&amp;#39;s daily note]]`&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="sb">`[[link to tomorrows&amp;#39;s daily note]]`&lt;/span> &lt;span class="na">Tomorrow&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb">`[[link to capture note]]`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">your notes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>the &lt;strong>&lt;code>000&lt;/code>&lt;/strong> in the file name ensures that the note is always on top in the file explorer pane&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>this requires using iCloud as directory for the Obsidian Vault&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;pre tabindex="0">&lt;code class="language-ahk" data-lang="ahk">; Syntax
 ; ^ = CTRL
 ; ! = ALT
@@ -167,7 +171,7 @@ Send, {Enter}
 Return
 &lt;/code>&lt;/pre>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>My Reading Workflow</title><link>https://julianenglert.com/my-reading-workflow/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/my-reading-workflow/</guid><description>&lt;p>This post shows how to build a reading workflow that allows you to extract summaries from books you&amp;rsquo;ve read to further work with the ideas in them.&lt;/p>
+&lt;/div></description></item><item><title>My Reading Workflow</title><link>https://julianenglert.com/my-reading-workflow/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://julianenglert.com/my-reading-workflow/</guid><description>&lt;p>This post shows how to build a reading workflow that allows you to extract summaries from books you&amp;rsquo;ve read to further work with the ideas in them.&lt;/p>
 &lt;h1 id="goal">Goal&lt;/h1>
 &lt;p>Be able to read any book digitally and process its most important ideas to never forget them&lt;/p>
 &lt;p>&lt;img src="https://julianenglert.com/reading_workflow/overviewm.png" alt="overviewm">&lt;/p>
@@ -207,14 +211,14 @@ Return
 &lt;h2 id="example-of-an-interconnected-book">Example of an interconnected book&lt;/h2>
 &lt;p>Josh Kaufman - The Personal MBA&lt;/p>
 &lt;p>&lt;img src="https://julianenglert.com/reading_workflow/pmba.jpg" alt="pmba">&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>In PlayBooks, there is no way to highlight images and figures directly. Make sure to highlight the caption (&lt;mark>Figure 3.1: This graph shows XYZ&amp;hellip;&lt;/mark>) if there is one, to find where to insert the missing figure later in your knowledge management system&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Markdown Syntax Guide</title><link>https://julianenglert.com/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://julianenglert.com/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;/div></description></item><item><title>Markdown Syntax Guide</title><link>https://julianenglert.com/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://julianenglert.com/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
 &lt;h1 id="h1">H1&lt;/h1>
@@ -281,9 +285,9 @@ Return
 &lt;h4 id="code-block-with-backticks">Code block with backticks&lt;/h4>
 &lt;pre tabindex="0">&lt;code>html
 &amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;
 &amp;lt;head&amp;gt;
-&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+&amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;
 &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
 &amp;lt;/head&amp;gt;
 &amp;lt;body&amp;gt;
@@ -303,16 +307,16 @@ Return
 &amp;lt;/html&amp;gt;
 &lt;/code>&lt;/pre>
 &lt;h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span> &lt;span class="na">lang&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;UTF-8&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Example HTML5 Document&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Test&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span> &lt;span class="na">lang&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;UTF-8&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Example HTML5 Document&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Test&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="list-types">List Types&lt;/h2>
 &lt;h4 id="ordered-list">Ordered List&lt;/h4>
 &lt;ol>
@@ -340,11 +344,11 @@ Return
 &lt;p>X&lt;sup>n&lt;/sup> + Y&lt;sup>n&lt;/sup> = Z&lt;sup>n&lt;/sup>&lt;/p>
 &lt;p>Press &lt;kbd>&lt;kbd>CTRL&lt;/kbd>+&lt;kbd>ALT&lt;/kbd>+&lt;kbd>Delete&lt;/kbd>&lt;/kbd> to end the session.&lt;/p>
 &lt;p>Most &lt;mark>salamanders&lt;/mark> are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk&lt;/a> during Gopherfest, November 18, 2015.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
