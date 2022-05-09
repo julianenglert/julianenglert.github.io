@@ -29,7 +29,7 @@ draft = "false"
 - make sure to check that you didn't break the site by running `hugo server` 
 
 ### Set up Github Actions to automatically build Hugo website
-- Follow these instructions: https://sgibson91.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html
+- [follow these instructions](https://carpentries-incubator.github.io/blogging-with-hugo-and-github-pages/04-continuous-deployment/index.html)
 
 ### Git commands
 - `git add .`

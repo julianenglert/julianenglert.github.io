@@ -44,7 +44,7 @@ title: "Home"
 - The Drive Podcast with Peter Attia - Sam Harris ([YT](https://www.youtube.com/watch?v=1iGVX_ubMmE), [Podcast](https://peterattiamd.com/samharris/))
 - Making Sense Podcast with Sam Harris - Ian McGilchrist ([YT](https://www.youtube.com/watch?v=fJRx9wItvKo), [Podcast](https://www.samharris.org/podcasts/making-sense-episodes/234-divided-mind))
 
-Essays
+#### Essays
 - [Why books donʼt work](https://andymatuschak.org/books/)
 - [The Purpose of Technology](https://balajis.com/the-purpose-of-technology/)
 - [A Meta-Layer for Notes](https://julian.digital/2020/09/04/a-meta-layer-for-notes/) and [Superhuman & the Productivity Meta-Layer
