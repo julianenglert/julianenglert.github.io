@@ -44,14 +44,14 @@ title: "Home"
 - The Drive Podcast with Peter Attia - Sam Harris ([YT](https://www.youtube.com/watch?v=1iGVX_ubMmE), [Podcast](https://peterattiamd.com/samharris/))
 - Making Sense Podcast with Sam Harris - Ian McGilchrist ([YT](https://www.youtube.com/watch?v=fJRx9wItvKo), [Podcast](https://www.samharris.org/podcasts/making-sense-episodes/234-divided-mind))
 
-#### Essays
-- [Why books donʼt work](https://andymatuschak.org/books/)
+#### 10 Essays
+- [Why Books Donʼt Work](https://andymatuschak.org/books/)
 - [The Purpose of Technology](https://balajis.com/the-purpose-of-technology/)
 - [A Meta-Layer for Notes](https://julian.digital/2020/09/04/a-meta-layer-for-notes/) and [Superhuman & the Productivity Meta-Layer
 ](https://julian.digital/2020/01/17/superhuman-the-productivity-meta-layer/)
-- [Don’t be spooky](https://therealadam.com/2021/11/01/dont-be-spooky/)
-- [There's no speed limit](https://sive.rs/kimo)
-- [Ontology is overrated](https://ia800203.us.archive.org/10/items/Ontology_is_Overrated_Categories_Links_and_Tags/shirky.pdf)
+- [Don’t Be Spooky](https://therealadam.com/2021/11/01/dont-be-spooky/)
+- [There's No Speed Limit](https://sive.rs/kimo)
+- [Ontology Is Overrated](https://ia800203.us.archive.org/10/items/Ontology_is_Overrated_Categories_Links_and_Tags/shirky.pdf)
 - [How to use your wife/husband/gf/bf correctly](https://guzey.com/personal/how-to-use-your-wife/)
 - [The Lens That Sees Its Own Flaws](https://www.readthesequences.com/The-Lens-That-Sees-Its-Own-Flaws)
 - [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/)
