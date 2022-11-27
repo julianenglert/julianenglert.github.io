@@ -8,9 +8,9 @@ title: "Home"
 
 **Interested in**: bio / nanotech, crypto, longevity, space colonization
 
-**Currently**: founding [Adaptyv Biosystems](https://adaptyvbio.com), a protein engineering company
+**Currently**: founding [Adaptyv Bio](https://adaptyvbio.com), a protein engineering company
 
-**Socials**: [Twitter](https://twitter.com/julian_englert), [LinkedIn](https://www.linkedin.com/in/julian-englert)
+**Socials**: [Twitter](https://twitter.com/julian_englert), [LinkedIn](https://www.linkedin.com/in/julian-englert), [Luma](https://lu.ma/julian_englert)
 
 **Email**: julian.englert@pm.me
 
@@ -18,10 +18,9 @@ title: "Home"
 
 ---
 
-### Things I like
+### Some things that I like
 
 #### 10 Books
-- Yuval Noah Harari - Sapiens
 - Robin Hanson - The Elephant in the Brain
 - Eliezer Yudkowsky - Inadequate Equilibria
 - Eliezer Yudkowsky - Rationality (From **A**I to **Z**ombies)
@@ -31,6 +30,7 @@ title: "Home"
 - Ray Kurzweil - The Singularity Is Near
 - Kevin Kelly - What Technology Wants
 - Max Tegmark - Life 3.0
+- Nick Bostrom - Superintelligence
 
 #### 10 Podcasts 
 - Huberman Lab Podcast - Maximizing Productivity, Physical & Mental Health ([YT](https://www.youtube.com/watch?v=aXvDEmo6uS4), [Podcast](https://hubermanlab.com/maximizing-productivity-physical-and-mental-health-with-daily-tools/))
@@ -47,8 +47,7 @@ title: "Home"
 #### 10 Essays
 - [Why Books Donʼt Work](https://andymatuschak.org/books/)
 - [The Purpose of Technology](https://balajis.com/the-purpose-of-technology/)
-- [A Meta-Layer for Notes](https://julian.digital/2020/09/04/a-meta-layer-for-notes/) and [Superhuman & the Productivity Meta-Layer
-](https://julian.digital/2020/01/17/superhuman-the-productivity-meta-layer/)
+- [A Meta-Layer for Notes](https://julian.digital/2020/09/04/a-meta-layer-for-notes/) 
 - [Don’t Be Spooky](https://therealadam.com/2021/11/01/dont-be-spooky/)
 - [There's No Speed Limit](https://sive.rs/kimo)
 - [Ontology Is Overrated](https://ia800203.us.archive.org/10/items/Ontology_is_Overrated_Categories_Links_and_Tags/shirky.pdf)
